@@ -45,7 +45,7 @@ public class Principal {
         boolean troca = true;
 
         int inicio = r;
-        int fim = p - 1;
+        int fim = p;
         int ultima = 1;
         int primeira = p - 1;
 
@@ -88,7 +88,8 @@ public class Principal {
             System.out.println((i + 1) + " - " + A[i]);
         }
 
-        shakersort(A, 0, r);
+        //Ordena o vetor A de p até r
+        shakersort(A, 0, r-1);
 
         System.out.println("Depois: ");
         for (int i = 0; i < r; i++) {
